@@ -3075,7 +3075,7 @@ body.is-touch #banner {
 	}
 
 	#banner p {
-		color: #aaa;
+		color: rgb(212, 212, 212);
 		font-size: 1.5em;
 		margin-bottom: 1.75em;
 		text-transform: uppercase;
