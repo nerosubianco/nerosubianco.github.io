@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Spatial by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <meta name="google-site-verification" content="kO-m6YOl8FVB3BjTPF86aii45kccZcIYOyTGEilZmfU" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158138972-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158138972-1');
+    </script>
+    <title>Nero su Bianco, il giornale dei licei Pujati</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="landing">
+    <script type="text/javascript">
+        var token = '28940409236.1677ed0.67e350ddbd994a769dc9739935ff0d7a';
+        $.ajax({
+            url: 'https://api.instagram.com/v1/users/self',
+            dataType: 'jsonp',
+            type: 'GET',
+            data: {access_token: token},
+            success: function(data){
+                var follows = data['data']['counts']['followed_by'];
+                $(".instagram").text(follows);
+            },
+            error: function(data){
+                console.log(data);
+            }
+            //Adesso siamo a <strong class="instagram"></strong> followers!
+        });
+    </script>
+    <section id="banner">
+        <h2>Nero su Bianco</h2>
+        <p>Il giornale dei licei Pujati</p>
+        <ul class="actions">
+            <li><a href="edizioni.html" class="button special big">Scarica il giornale!</a></li>
+        </ul>
+    </section>
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <header class="major">
+                        <h2>Chi siamo?</h2>
+                        <p>Siamo la classe 1ªASA del liceo Pujati.</p>
+                    </header>
+                </div>
+                <div class="6u$ 12u$(medium)">
+                    <p>Abbiamo deciso di fare un giornale per tutti i licei Pujati, infatti nel nostro giornale parleremo di notizie riguardanti il nostro liceo. Ma nei nostri giornali parleremo anche di attualità, tecnologia, faremo recensioni di film e libri e andremo a fare qualche inchiesta a Sacile.</p>
+                </div>
+                <div class="6u 12u$(medium)">
+                    <header class="major">
+                        <h2>Vuoi aiutarci?</h2>
+                        <p>Ecco come potresti aiutarci...</p>
+                    </header>
+                </div>
+                <div class="6u$ 12u$(medium)">
+                    <p>Abbiamo molti progetti, ma per realizzarli abbiamo bisogno del tuo aiuto! Scarica il giornale ed invia un messaggio in direct a <a href="https://instagram.com/nerosubianco20">@nerosubianco20</a> un messaggio dicendoci cosa potremo migliorare o aggiungere!</p>
+                    <p>Vuoi fare di più di questo? Invia un messaggio in direct a <a href="https://instagram.com/nerosubianco20">@nerosubianco20</a> per diventare uno della redazione!</p>
+                </div>
+            </div>
+        </div>        
+        <div class="container 75%">
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <header class="major">
+                        <h2>Seguici su Instagram!</h2>
+                    </header>
+                </div>
+                <div class="6u$ 12u$(medium)">
+                    <p>Il nostro username è <a href="https://instagram.com/nerosubianco20">@nerosubianco20</a>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Seguici su:</p>
+        <ul class="icons">
+            <li><a href="https://www.instagram.com/nerosubianco20/" class="icon fa-instagram"></a></li>
+        </ul>
+        <p>Template scaricato da: <a href="http://templated.co">TEMPLATED</a>,</p>
+        <p>sotto la licenza <a href="LICENSE.txt">Creative Commons Attributions 3.0 Unported</a></p>
+    </footer>
+</body>
+</html>
