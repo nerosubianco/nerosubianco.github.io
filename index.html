@@ -8,45 +8,13 @@
 
 <head>
     <meta name="google-site-verification" content="kO-m6YOl8FVB3BjTPF86aii45kccZcIYOyTGEilZmfU" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158138972-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-158138972-1');
-    </script>
     <title>Nero su Bianco, il giornale dei licei Pujati</title>
     <meta charset="utf-8" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="landing">
-    <script type="text/javascript">
-        var token = '28940409236.1677ed0.67e350ddbd994a769dc9739935ff0d7a';
-        $.ajax({
-            url: 'https://api.instagram.com/v1/users/self',
-            dataType: 'jsonp',
-            type: 'GET',
-            data: {
-                access_token: token
-            },
-            success: function(data) {
-                var follows = data['data']['counts']['followed_by'];
-                $(".instagram").text(follows);
-            },
-            error: function(data) {
-                    console.log(data);
-                }
-                //Adesso siamo a <strong class="instagram"></strong> followers!
-        });
-    </script>
     <section id="banner">
         <h2>Nero su Bianco</h2>
         <p>Il giornale dei licei Pujati</p>
@@ -88,7 +56,6 @@
             </li>
         </ul>
         <p>Template scaricato da: <a href="http://templated.co">TEMPLATED</a>,</p>
-        <p>sotto la licenza <a href="LICENSE.txt">Creative Commons Attributions 3.0 Unported</a></p>
     </footer>
 </body>
 
