@@ -1632,7 +1632,7 @@ i {
 }
 
 p {
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
 }
 
 h1,
@@ -2363,7 +2363,7 @@ ol li {
 
 ul {
     list-style: disc;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     padding-left: 1em;
 }
 
@@ -2390,6 +2390,7 @@ ul.icons {
     cursor: default;
     list-style: none;
     padding-left: 0;
+    padding-top: 20px;
 }
 
 ul.icons li {
@@ -3126,6 +3127,7 @@ body.is-touch #banner {
     background: #f6f6f6;
     color: #aaa;
     text-align: center;
+    overflow: hidden;
     display: none;
 }
 
@@ -3177,7 +3179,10 @@ body.is-touch #banner {
 
 @media screen and (max-width: 980px) {
     #footer {
-        padding: 6em 0 4em 0;
+        padding: 1em 0 1em 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
