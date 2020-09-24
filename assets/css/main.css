@@ -99,6 +99,10 @@ video {
     vertical-align: baseline;
 }
 
+html {
+    height: 100%;
+}
+
 article,
 aside,
 details,
@@ -3180,9 +3184,6 @@ body.is-touch #banner {
 @media screen and (max-width: 980px) {
     #footer {
         padding: 1em 0 1em 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
 }
 
@@ -3205,4 +3206,15 @@ body.is-touch #banner {
         margin: 0;
         padding: 0;
     }
+}
+
+.reader {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 58px;
+}
+
+.margin {
+    margin: 5px;
 }
